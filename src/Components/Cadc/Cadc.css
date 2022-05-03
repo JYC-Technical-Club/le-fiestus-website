@@ -1,0 +1,111 @@
+.cadc{
+    background-image: url(./images/image-bg.png)
+}
+.top-design img {
+    width: 97vw;
+    margin-top: -0.5rem;
+}
+
+.container-rightside {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 4rem;
+}
+
+.paint-brush-image img {
+    height: 80px;
+    width: 500px;
+}
+
+.paint-brush-image {
+    margin-top: 3.5rem;
+    margin-left: -22rem;
+    z-index: 50;
+}
+
+.cadc-image {
+    margin-left: -10%;
+    margin-top: -3rem;
+
+}
+
+.cadc-image img {
+    height: 400px;
+    width: 475px;
+}
+
+.heading-cadc {
+    display: flex;
+    justify-content: center;
+}
+
+.heading-text-cadc {
+    font-size: 5rem;
+    font-family: 'Water Brush', cursive;
+    color: #FFA800;
+    margin-bottom: -5rem;
+    z-index: 100;
+}
+
+
+.text-cadc {
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 7%;
+    text-align: justify;
+    padding-right: 15%;
+    font-size: 1.5rem;
+    margin-top: -1rem;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+
+    .container-rightside {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+    }
+
+    .cadc-image img {
+        height: 80vw;
+        width: 70vw;
+    }
+
+
+
+    .paint-brush-image img {
+        height: 6vw;
+        width: 40vw;
+    }
+
+    .paint-brush-image {
+        margin-top: 3.5rem;
+        margin-left: -21rem;
+    }
+
+
+
+
+    .cadc-image {
+        margin-top: 0rem;
+        margin-left: 15%;
+        margin-bottom: 1.5rem;
+    }
+
+
+
+    .text-cadc {
+        padding-left: 10%;
+        text-align: justify;
+        padding-right: 10%;
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+        
+    }
+
+    .text-cadc {
+        order: 1;
+    }
+
+}

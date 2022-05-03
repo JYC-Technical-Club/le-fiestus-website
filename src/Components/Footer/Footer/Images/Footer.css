@@ -1,0 +1,133 @@
+.Footer{
+    background-color: #11051D;
+    color: #edf0f1;
+    padding: 2vh 0;
+}
+.Footer-Content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 3%;
+    border-bottom: 1vh solid #B9A8CD;
+}
+.footertext{
+    display: flex;
+    text-align: left;
+}
+.Contact-Us{
+    margin-left: 1rem;
+}
+.Footer-Line_l1{
+    width: 11.5rem;
+    height: 0.5vh;
+    margin-left: 1rem;
+    z-index: 2;
+    background-color: #B9A8CD;
+}
+.Footer-Details{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: flex-start;
+}
+.Footer-Socials{
+    display: flex;
+    align-items: center;
+    padding: 1rem 0.5rem;
+}
+.Sociallinks{
+    text-decoration: none;
+    padding: 0 0.7vw;
+    color: #edf0f1;
+    font-size: 2rem;
+}
+.Footer-Line_l2{
+    width: 40vw;
+    height: 1vh;
+    background-color: #B9A8CD;
+}
+.Footer-Logo{
+    display: flex;
+    width: 40rem;
+    align-items: center;
+    border-top: 1vh solid #B9A8CD;
+    justify-content: space-between;
+    padding: 0 3vw;
+}
+.Footer-Logo_TMP{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 1rem;
+    width: 15rem;
+    height: 10rem;
+}
+.TMP_Text p{
+    padding: 1vh 0;
+}
+.TMP_logo img{
+    width: 50rem;
+}
+
+.Footer-Copyright{
+    display: flex;
+    padding-top: 2vh;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+@media screen and (max-width:960px) {
+    .Footer-Details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Footer-Line_l1{
+        width: 30%;
+    }
+    .Footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Footer-Content{
+        display: flex;
+        flex-direction: column;
+        padding: 2vh 0;
+    }
+    .Footer-Text{
+        display: flex;
+        justify-content: center;
+    }
+    .Footer-Logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        padding: 0;
+    }
+    .Footer-Socials{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .Sociallinks{
+        padding: 0 2rem;
+    }
+    .Footer-Copyright{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .Murious-Logo{
+        margin: 1rem 0;
+    }
+    .Footer-Logo_TMP{
+        height: 100%;
+    }
+}
