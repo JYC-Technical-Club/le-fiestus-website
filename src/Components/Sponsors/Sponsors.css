@@ -8,9 +8,9 @@
   gap: 2rem;
   padding-bottom: 2rem;
   padding-top: 5rem;
+  padding-left: 10%;
+  padding-right: 10%;
 }
-
-
 
 .heading {
   display: flex;
@@ -29,53 +29,25 @@
 }
 
 .all-logos {
-  display: flex;
-  flex-direction: column;
-  gap: 5vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 2vw;
+  justify-items: center;
+  align-items: center;
 }
 
-.row1,
-.row2,
-.row3,
-.row4,
-.row4,
-.row5,
-.row6 {
-  margin-left: 4%;
-  margin-right: 4%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.all-logos img {
+  width: 10vw;
 }
-
-.ebay {
-  width: 12%;
-}
-
-.nescafe {
-  width: 15%;
-}
-
-.freecharge {
-  width: 12%;
-}
-
-.hyundai {
-  width: 12%;
-}
-
-.harley {
-  width: 12%;
-}
-
 
 @media screen and (max-width: 1000px) {
 
-  .sponsors {
-    display: flex;
-    flex-direction: column;
-    gap: 0rem;
+
+  .all-logos {
+    grid-template-columns: 1fr;
+    gap: 5rem;
   }
+
   .brush3 {
 
     margin-left: 32%;
@@ -83,11 +55,14 @@
 
   }
 
+  .all-logos img {
+    width: 70vw;
+  }
+
   .heading img {
     height: 7vw;
     width: 28vw;
     margin-top: -2rem;
-    /* z-index: 50; */
   }
 
   .heading {
@@ -96,47 +71,4 @@
     margin-left: 3rem;
   }
 
-
-  .row1,
-  .row2,
-  .row3,
-  .row4,
-  .row4,
-  .row5,
-  .row6 {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 1.5rem;
-    gap: 2rem;
-  }
-
-  .time {
-    width: 5%;
-  }
-
-  .ebay {
-    width: 100%;
-  }
-
-  .nescafe {
-    width: 100%;
-  }
-
-  .freecharge {
-    width: 100%;
-  }
-
-  .hyundai {
-    width: 100%;
-  }
-
-  .harley {
-    width: 100%;
-  }
-.osponsors{
-  margin-left: 20%;
-}
 }
