@@ -203,7 +203,7 @@ h1 + h2 {
 h2 {
   align-items: center;
   display: grid;
-  font-size: calc(var(--default-font-size) * 1.4);
+  font-size: calc(var(--default-font-size) * 1.8);
   font-variation-settings: "wght" 750;
   grid-gap: calc(var(--default-padding) * 1.25);
   grid-template-columns: calc(var(--default-padding) * 2) auto calc(
