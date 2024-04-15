@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  --s: 200px; /* control the size */
+
+  --_g: #fec60d 25%, #fb6c0e 0 50%, #0000 0;
+  --_l1: #fff 0 1px, #0000 0 calc(25% - 1px), #fff 0 25%;
+  --_l2: #fff 0 1px, #0000 0 calc(50% - 1px), #fff 0 50%;
+  background: repeating-linear-gradient(45deg, var(--_l1)),
+    repeating-linear-gradient(-45deg, var(--_l1)),
+    repeating-linear-gradient(0deg, var(--_l2)),
+    repeating-linear-gradient(90deg, var(--_l2)),
+    conic-gradient(from 135deg at 25% 75%, var(--_g)),
+    conic-gradient(from 225deg at 25% 25%, var(--_g)),
+    conic-gradient(from 45deg at 75% 75%, var(--_g)),
+    conic-gradient(from -45deg at 75% 25%, var(--_g)),
+    repeating-conic-gradient(#fb6c0e 0 45deg, #902f72 0 90deg);
+  background-size: var(--s) var(--s);
+}
+
+  
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #00000000;
+  z-index: 10;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  margin-left: auto;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+
+
+button {
+  padding: 0.1em 0.10em;
+  width: 9.4em;
+  height: 3.0em;
+  background-color: #fb6c0e;
+  border: 0em solid #fb6c0e;
+  border-radius: 0.3em;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+button span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.45em;
+  width: 6.3em;
+  height: 2.0em;
+  background-color: #ff0000;
+  border-radius: 0.2em;
+  font-size: 1.5em;
+  color: #000000;
+  border: 0.08em solid #fff;
+  box-shadow: 0 0.4em 0.1em 0.019em #ff0000;
+}
+
+button span:hover {
+  transition: all 0.5s;
+  transform: translate(0, 0.4em);
+  box-shadow: 0 0 0 0 #fff;
+}
+
+button span:not(hover) {
+  transition: all 1s;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  .nav-links {
+    margin: auto;
+  }
+
+  .nav-links li{
+    margin-right: 5px;
+  }
+
+  header{
+    background-color: #00000000;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  button {
+    width:4.6em;
+    height: 2.2em;
+    padding: 0em 0.05em;
+  }
+
+  button span {
+    width: 5.5em;
+    height: 2.5em;
+    font-size: 0.8em;
+  }
+
+}
