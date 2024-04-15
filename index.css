@@ -58,10 +58,7 @@ html {
   text-transform: uppercase;
 }
 
-.ft{
-  font-family: 'DevankFont';
-  
-}
+
 
 .container-theme {
   z-index: -10;
@@ -206,7 +203,7 @@ h1 + h2 {
 h2 {
   align-items: center;
   display: grid;
-  font-size: calc(var(--default-font-size) * 1.25);
+  font-size: calc(var(--default-font-size) * 1.4);
   font-variation-settings: "wght" 750;
   grid-gap: calc(var(--default-padding) * 1.25);
   grid-template-columns: calc(var(--default-padding) * 2) auto calc(
@@ -236,6 +233,10 @@ h3 {
   padding: calc(var(--default-padding) / 2);
   z-index: 2;
 }
+}
+
+.ft{
+  font-family: 'DevankFont';
 }
 
 .container {
