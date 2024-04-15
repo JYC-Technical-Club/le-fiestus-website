@@ -2,11 +2,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 94vh; /* Adjust the height as per your preference */
+  height: 63vh; /* Adjust the height as per your preference */
   overflow: hidden;
 }
 
 .image-container img {
   max-width: 115%;
   max-height: 150%;
+}
+
+@media screen and (max-width: 468px) {
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 124vh; /* Adjust the height as per your preference */
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    max-width: 115%;
+    max-height: 150%;
+  }
+  
+  
 }
