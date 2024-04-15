@@ -30,7 +30,7 @@
   flex-direction: column; /* Stack elements vertically */
   justify-content: center; /* Center vertically */
   align-items: center;
-  height:250px;
+  height:350px;
   /* Adjust as needed */
 }
 @media screen and (max-width: 468px) {
