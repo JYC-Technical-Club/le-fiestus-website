@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'DevankFont';
+  src: url('../SAMARN__.TTF') format('woff2');
+}
+
 :root {
   --icon-dimensions: 4rem;
   --full-w: 100%;
@@ -51,6 +56,11 @@ html {
   height: -webkit-fill-available;
   text-rendering: optimizelegibility;
   text-transform: uppercase;
+}
+
+.ft{
+  font-family: 'DevankFont';
+  
 }
 
 .container-theme {
