@@ -22,6 +22,45 @@
     conic-gradient(from -45deg at 75% 25%, var(--_g)),
     repeating-conic-gradient(#fb6c0e 0 45deg, #902f72 0 90deg);
   background-size: var(--s) var(--s);
+  
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center;
+  height:250px;
+  /* Adjust as needed */
+}
+@media screen and (max-width: 468px) {
+  .button-container{
+    margin-bottom: -210px; 
+  }
+}
+
+.button {
+  --key-text-color: #ffffff;
+  --docsearch-key-shadow: inset 0 -2px 0 0 #cdcde6, inset 0 0 1px 1px #fff,
+    0 1px 2px 1px rgba(30, 35, 90, 0.4);
+  --docsearch-key-gradient: linear-gradient(-225deg, #ff3e17, #920000);
+  border: none;
+  background: var(--docsearch-key-gradient);
+  border-radius: 3px;
+  box-shadow: var(--docsearch-key-shadow);
+  color: var(--key-text-color);
+  cursor: pointer;
+  height: 2.5em;
+  text-align: center;
+  padding: 0.6em;
+  margin: 0 0.6em;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1em;
+  width: 9em;
+  line-height: 1em;
+  user-select: none;
 }
 
   
