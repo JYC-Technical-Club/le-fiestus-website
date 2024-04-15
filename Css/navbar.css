@@ -68,7 +68,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -126,7 +126,7 @@ button span {
   background-color: #ff0000;
   border-radius: 0.2em;
   font-size: 1.5em;
-  color: #000000;
+  color: #ffffff;
   border: 0.08em solid #fff;
   box-shadow: 0.2em 0.4em 0.1em 0.019em #ff0000;
 }
@@ -163,13 +163,13 @@ button span:not(hover) {
   }
 
   button {
-    width:4.6em;
+    width:5em;
     height: 2.2em;
     padding: 0em 0.05em;
   }
 
   button span {
-    width: 5.5em;
+    width: 5.9em;
     height: 2.5em;
     font-size: 0.8em;
   }
