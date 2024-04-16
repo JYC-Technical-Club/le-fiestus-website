@@ -134,7 +134,7 @@ button span {
   font-size: 1.5em;
   color: #ffffff;
   border: 0.08em solid #fff;
-  box-shadow: 0.2em 0.4em 0.1em 0.019em #ff0000;
+  box-shadow: 0.2em 0.4em 0.1em 0.019em #ff000000;
 }
 
 button span:hover {

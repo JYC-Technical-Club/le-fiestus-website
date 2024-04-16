@@ -27,7 +27,7 @@ main {
 
 h1 {
   padding-top: 20px;
-  font-size: clamp(30px, 3vw, 1vw);
+  font-size: clamp(27px, 3vw, 1vw);
   font-weight: 600;
   text-align: center;
 } 
@@ -47,7 +47,7 @@ h1 {
   width: 94%;
   background-color: var(--frame-bg);
   box-shadow: 0 3px 0 0 hsl(35, 100%, 36%), 0 6px 0 0 var(--frame-bg);
-  font-size: 7em;
+  font-size: 12em;
   font-weight: 700;
 }
 
@@ -126,21 +126,22 @@ h1 {
   font-weight: 800;
   letter-spacing: 0.3em;
   color: var(--label);
+  font-size: 1.4rem;
 }
 
 @media only screen and (max-width: 769px) {
   .frame {
-    font-size: 8vw;
+    font-size: 10vw;
   }
   h1 {
-    font-size: clamp(20px, 3vw, 1vw);
+    font-size: clamp(23px, 3vw, 1vw);
   } 
 
 }
 
 @media only screen and (max-width: 600px) {
   .unit-label {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
 }
 
