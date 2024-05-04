@@ -13887,6 +13887,12 @@ img + .custom-title {
 	margin-top: 40px;
 }
 
+.breadcrumbs-custom-title {
+	font-family: "Archivo Black";
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.5); /* Horizontal offset, Vertical offset, Blur radius, Color */
+  }
+  
+
 @media (max-width: 991.98px) {
 	.breadcrumbs-custom-title {
 		font-size: 26px;
