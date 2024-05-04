@@ -2247,12 +2247,14 @@ background: linear-gradient(90deg, rgba(40,1,67,1) 0%, rgba(228,30,81,1) 100%);
 .rd-navbar-fixed .rd-navbar-panel {
 	color: #ffffff;
 	box-shadow: none;
-	background: #222d4f;
+	background: rgb(55,1,67);
+	background: linear-gradient(90deg, rgba(55,1,67,1) 0%, rgba(198,30,81,1) 100%);
 }
 
 .rd-navbar-fixed .rd-navbar-nav-wrap {
 	color: #ffffff;
-	background: #1c2748;
+	background: rgb(55,1,67);
+	background: linear-gradient(90deg, rgba(55,1,67,1) 0%, rgba(198,30,81,1) 100%);
 	border: 1px solid #e5e7e9;
 	box-shadow: none;
 }
@@ -9834,7 +9836,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, [class^='heading-'] a {
 }
 
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, [class^='heading-'] a:hover {
-	color: #4ac4cf;
+	color: #ffe600;
 }
 
 @font-face {
