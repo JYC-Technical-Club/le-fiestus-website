@@ -15308,3 +15308,31 @@ background: linear-gradient(90deg, rgba(55,1,67,1) 0%, rgba(198,30,81,1) 100%);
 	}
   }
   
+  @media screen and (max-width: 768px) {
+
+	.logos-slide-reverse {
+		display: inline-block;
+		white-space: nowrap;
+		animation: slide-reverse 10s linear infinite; /* Adjust animation duration */
+	  }
+
+	@keyframes slide {
+		from {
+		  transform: translateX(0);
+		}
+		to {
+		  transform: translateX(-360%);
+		}
+	  }
+	  
+	  @keyframes slide-reverse {
+		from {
+		  transform: translateX(-200%);
+		}
+		to {
+		  transform: translateX(0);
+		}
+	  }
+	  
+	
+  }
