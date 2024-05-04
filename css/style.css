@@ -15249,9 +15249,6 @@ background: linear-gradient(90deg, rgba(55,1,67,1) 0%, rgba(198,30,81,1) 100%);
 	margin: 0 10px; /* Reduced margin between images */
   }
   
-  .logos:hover .logos-slide {
-	animation-play-state: paused;
-  }
   
   /* New CSS for reverse section */
   .logos-reverse {
@@ -15292,9 +15289,6 @@ background: linear-gradient(90deg, rgba(55,1,67,1) 0%, rgba(198,30,81,1) 100%);
 	margin: 0 10px; /* Reduced margin between images */
   }
   
-  .logos-reverse:hover .logos-slide-reverse {
-	animation-play-state: paused;
-  }
   
   @keyframes slide {
 	from {
