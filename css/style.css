@@ -2326,7 +2326,7 @@ background: linear-gradient(90deg, rgba(40,1,67,1) 0%, rgba(228,30,81,1) 100%);
 }
 
 .rd-navbar-fixed .rd-navbar-collapse {
-	background-color: #222d4f;
+	background: rgba(198,30,81,1);
 	box-shadow: 0 0 22px -4px rgba(0, 0, 0, 0.17);
 }
 
