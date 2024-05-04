@@ -15295,13 +15295,13 @@ background: linear-gradient(90deg, rgba(55,1,67,1) 0%, rgba(198,30,81,1) 100%);
 	  transform: translateX(100%);
 	}
 	to {
-	  transform: translateX(-100%);
+	  transform: translateX(-50%);
 	}
   }
   
   @keyframes slide-reverse {
 	from {
-	  transform: translateX(-100%);
+	  transform: translateX(-50%);
 	}
 	to {
 	  transform: translateX(100%);
