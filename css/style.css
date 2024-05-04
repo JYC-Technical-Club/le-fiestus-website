@@ -4927,7 +4927,7 @@ h2 + .tabs-albums {
 }
 
 .owl-carousel .owl-dot.active span, .owl-carousel .owl-dot:hover span {
-	background: #4ac4cf;
+	background: #ffe600;
 }
 
 .owl-carousel-bio {
@@ -9212,6 +9212,7 @@ div.jp-creative .jp-playlist-item {
 	margin-top: 35px;
 	max-width: 442px;
 	margin-left: -4%;
+	font-weight: 650;
 }
 
 .countdown + .button {
