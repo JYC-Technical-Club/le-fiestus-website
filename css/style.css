@@ -3296,7 +3296,7 @@ html.rd-navbar-fixed-linked .page {
 	content: "LE-FIESTUS";
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 45px;
 	color: rgba(255, 215, 0, 1); /* Golden color */
 	text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
 	animation: sparkle 2s infinite linear alternate; /* Sparkle animation */
