@@ -15241,7 +15241,7 @@ background: linear-gradient(90deg, rgba(55,1,67,1) 0%, rgba(198,30,81,1) 100%);
   .logos-slide {
 	display: inline-block;
 	white-space: nowrap;
-	animation: slide 35s linear infinite; /* Adjust animation duration */
+	animation: slide 15s linear infinite; /* Adjust animation duration */
   }
   
   .logos-slide img {
@@ -15281,7 +15281,7 @@ background: linear-gradient(90deg, rgba(55,1,67,1) 0%, rgba(198,30,81,1) 100%);
   .logos-slide-reverse {
 	display: inline-block;
 	white-space: nowrap;
-	animation: slide-reverse 25s linear infinite; /* Adjust animation duration */
+	animation: slide-reverse 15s linear infinite; /* Adjust animation duration */
   }
   
   .logos-slide-reverse img {
