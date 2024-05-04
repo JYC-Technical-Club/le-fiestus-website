@@ -1854,25 +1854,27 @@
 		}
 
 		// jQuery Countdown
-		if ( plugins.countDown.length ) {
-			for ( var i = 0; i < plugins.countDown.length; i++) {
-				var $countDownItem = $( plugins.countDown[i] ),
-						settings = {
-							format: $countDownItem.attr('data-format'),
-							layout: $countDownItem.attr('data-layout')
-						};
-
-				if ( livedemo ) {
+		if (plugins.countDown.length) {
+			for (var i = 0; i < plugins.countDown.length; i++) {
+				var $countDownItem = $(plugins.countDown[i]),
+					settings = {
+						format: $countDownItem.attr('data-format'),
+						layout: $countDownItem.attr('data-layout')
+					};
+		
+				if (livedemo) {
 					var d = new Date("2024-05-10");
-					d.setDate(d.getDate());
-					settings[ $countDownItem.attr('data-type') ] = d;
+					d.setHours(17); // Set hours to 17 (5 PM)
+					d.setMinutes(30); // Set minutes to 30
+					settings[$countDownItem.attr('data-type')] = d;
 				} else {
-					settings[ $countDownItem.attr('data-type') ] = new Date( $countDownItem.attr( 'data-time' ) );
+					settings[$countDownItem.attr('data-type')] = new Date($countDownItem.attr('data-time'));
 				}
-
-				$countDownItem.countdown( settings );
+		
+				$countDownItem.countdown(settings);
 			}
 		}
+		
 
 		// Stepper
 		if (plugins.stepper.length) {
