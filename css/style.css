@@ -9212,7 +9212,7 @@ div.jp-creative .jp-playlist-item {
 	margin-top: 35px;
 	max-width: 442px;
 	margin-left: -4%;
-	font-weight: 650;
+	font-weight: 60;
 }
 
 .countdown + .button {
@@ -10687,6 +10687,19 @@ a.link-social:hover::after {
 		margin-left: 8px;
 	}
 }
+
+@media only screen and (max-width: 768px) {
+    .buttonn {
+        text-align: center;
+    }
+
+    .buttonn .button {
+        display: inline-block;
+    }
+	
+}
+
+
 
 .box-image-1 {
 	display: inline-block;
@@ -15184,7 +15197,7 @@ background: linear-gradient(90deg, rgba(55,1,67,1) 0%, rgba(198,30,81,1) 100%);
     .footer-logojyc {
       width: 80px;
       height: 40px;
-      margin-left: 30px;
+      margin-left: 0px;
     }
     .jyc-text {
       font-size: 8px;
