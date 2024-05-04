@@ -3293,14 +3293,19 @@ html.rd-navbar-fixed-linked .page {
   }
   
   .swiper-slide-caption h1::after {
-	content: "LE-FIESTUS";
-	position: absolute;
-	top: 0;
-	left: 45px;
-	color: rgba(255, 215, 0, 1); /* Golden color */
-	text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
-	animation: sparkle 2s infinite linear alternate; /* Sparkle animation */
-  }
+    content: "LE-FIESTUS";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 215, 0, 1);
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    animation: sparkle 2s infinite linear alternate;
+    text-align: center; /* Center the text */
+    width: 100%; /* Ensure full width */
+}
+
+
   
   
 
