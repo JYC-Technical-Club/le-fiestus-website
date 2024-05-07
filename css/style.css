@@ -699,7 +699,7 @@ html [class*='section-'].section-bottom-0 {
 
 @media (min-width: 1200px) {
 	.section-lg {
-		padding: 115px 0;
+		padding: 50px 0;
 	}
 	.section-xl {
 		padding: 115px 0;
@@ -1210,7 +1210,8 @@ html:not(.lt-ie10) .not-animated {
 	justify-content: center;
 	align-items: center;
 	padding: 20px;
-	background: #ffffff;
+	background: rgb(55,1,67);
+background: linear-gradient(90deg, rgba(40,1,67,1) 0%, rgba(228,30,81,1) 100%);
 	transition: .3s all ease;
 }
 
@@ -1238,7 +1239,7 @@ html:not(.lt-ie10) .not-animated {
 	width: 36px;
 	height: 36px;
 	margin: 0 auto;
-	border: 3px solid #4ac4cf;
+	border: 3px solid #ffe600;
 	border-radius: 50%;
 	border-left-color: transparent;
 	border-bottom-color: transparent;
@@ -3386,6 +3387,32 @@ html.rd-navbar-fixed-linked .page {
 	.swiper-slider-1 .swiper-pagination .swiper-pagination-bullet-active::after, .swiper-slider-1 .swiper-pagination .swiper-pagination-bullet-active::before {
 		opacity: 1;
 	}
+}
+
+.presented img{
+	height: 120px;
+	margin: 50px 10px 50px;
+}
+
+@media screen and (max-width: 768px) {
+	.presented img{
+		height: 60px;
+		margin: 50px 10px 50px;
+	}
+	
+}
+
+.organisers img{
+	height: 120px;
+	margin: 50px 50px 50px;
+}
+
+@media screen and (max-width: 768px) {
+	.organisers img{
+		height: 60px;
+		margin: 50px 10px 50px;
+	}
+	
 }
 
 /** @section Google Map */
@@ -15241,12 +15268,32 @@ background: linear-gradient(90deg, rgba(55,1,67,1) 0%, rgba(198,30,81,1) 100%);
   .logos-slide {
 	display: inline-block;
 	white-space: nowrap;
-	animation: slide 15s linear infinite; /* Adjust animation duration */
+	animation: slide1 12s linear infinite; /* Adjust animation duration */
   }
   
   .logos-slide img {
 	height: 80px;
 	margin: 0 10px; /* Reduced margin between images */
+  }
+
+  .logos-slide1 {
+	display: inline-block;
+	white-space: nowrap;
+	animation: slide1 12s linear infinite; /* Adjust animation duration */
+  }
+  
+  .logos-slide1 img {
+	height: 80px;
+	margin: 0 10px; /* Reduced margin between images */
+  }
+
+  @media screen and (max-width: 768px){
+	.logos-slide{
+		animation: slide 10s linear infinite;
+	}
+	.logos-slide1{
+		display: none;
+	}
   }
   
   
@@ -15281,12 +15328,35 @@ background: linear-gradient(90deg, rgba(55,1,67,1) 0%, rgba(198,30,81,1) 100%);
   .logos-slide-reverse {
 	display: inline-block;
 	white-space: nowrap;
-	animation: slide-reverse 15s linear infinite; /* Adjust animation duration */
+	animation: slide-reverse1 8s linear infinite; /* Adjust animation duration */
   }
   
   .logos-slide-reverse img {
 	height: 80px;
 	margin: 0 10px; /* Reduced margin between images */
+  }
+
+  .logos-slide-reverse1 {
+	display: inline-block;
+	white-space: nowrap;
+	animation: slide-reverse1 8s linear infinite; /* Adjust animation duration */
+  }
+  
+  .logos-slide-reverse1 img {
+	height: 80px;
+	margin: 0 10px; /* Reduced margin between images */
+  }
+
+  @media screen and (max-width: 768px){
+
+	.logos-slide-reverse {
+		animation: slide-reverse 10s linear infinite; /* Adjust animation duration */
+	  }
+
+	.logos-slide-reverse1{
+		display: none;
+	}
+
   }
   
   
@@ -15295,44 +15365,39 @@ background: linear-gradient(90deg, rgba(55,1,67,1) 0%, rgba(198,30,81,1) 100%);
 	  transform: translateX(0);
 	}
 	to {
-	  transform: translateX(-100%);
+	  transform: translateX(-210%);
 	}
   }
   
   @keyframes slide-reverse {
 	from {
-	  transform: translateX(-100%);
+	  transform: translateX(-150%);
 	}
 	to {
 	  transform: translateX(0);
 	}
   }
-  
-  @media screen and (max-width: 768px) {
 
-	.logos-slide-reverse {
-		display: inline-block;
-		white-space: nowrap;
-		animation: slide-reverse 10s linear infinite; /* Adjust animation duration */
-	  }
-
-	@keyframes slide {
-		from {
-		  transform: translateX(0);
-		}
-		to {
-		  transform: translateX(-360%);
-		}
-	  }
-	  
-	  @keyframes slide-reverse {
-		from {
-		  transform: translateX(-200%);
-		}
-		to {
-		  transform: translateX(0);
-		}
-	  }
-	  
-	
+  @keyframes slide1 {
+	from {
+	  transform: translateX(0);
+	}
+	to {
+	  transform: translateX(-100%);
+	}
   }
+  
+  @keyframes slide-reverse1 {
+	from {
+	  transform: translateX(-60%);
+	}
+	to {
+	  transform: translateX(0);
+	}
+  }
+  .partition {
+	height: 0.2px;
+	background-color: #ffe600;
+	margin: 20px 0; /* Adjust margin as needed */
+  }
+  
