@@ -3396,7 +3396,7 @@ html.rd-navbar-fixed-linked .page {
 
 @media screen and (max-width: 768px) {
 	.presented img{
-		height: 60px;
+		height: 50px;
 		margin: 50px 10px 50px;
 	}
 	
