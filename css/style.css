@@ -684,7 +684,7 @@ html [class*='section-'].section-bottom-0 {
 		padding: 80px 0 90px;
 	}
 	.section-lg {
-		padding: 100px 0;
+		padding: 60px 0;
 	}
 	.section-lg-2 {
 		padding: 100px 0;
@@ -896,9 +896,9 @@ background-color: #4158D0;
 	background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 }
 
-.bg-default:not([style*="background-"]) + .bg-default:not([style*="background-"]) {
+/* .bg-default:not([style*="background-"]) + .bg-default:not([style*="background-"]) {
 	padding-top: 0;
-}
+} */
 
 .bg-gray-800 {
 	background-color: #1c2748;
@@ -7687,6 +7687,7 @@ y-axis
 	bottom: 0;
 	right: 0;
 	height: auto;
+	border-radius: 2em;
 }
 
 .mCSB_scrollTools a + .mCSB_draggerContainer {
@@ -7973,6 +7974,7 @@ yx-axis
 
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
 	background-color: #2aadc5;
+	border-radius: 2em;
 }
 
 .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
@@ -10034,7 +10036,7 @@ p [style*='max-width'] {
 }
 
 .text-gray-600 {
-	color: #2aadc5;	
+	color: white;	
 }
 
 .custom-title {
@@ -10961,7 +10963,7 @@ a.link-social:hover::after {
 
 .box-bio-text {
 	margin-top: 13px;
-	color: #2aadc5;
+	color: white;
 	letter-spacing: .1em;
 }
 
@@ -11009,7 +11011,7 @@ a.link-social:hover::after {
 }
 
 .box-icon-classic-list a {
-	color: #2aadc5;
+	color: white;
 }
 
 .box-icon-classic-list a:hover {
@@ -15437,14 +15439,20 @@ div.single-product-rating .icon {
 
 .footer-container {
     width: 100%;
-    padding: 0 2rem;
+    padding: 0 10rem;
 	margin-inline: auto;
+}
+@media (max-width: 500px) {
+	.footer-container {
+		padding: 0 2rem;
+	}
 }
 
 .footer-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
+	padding-inline: 3rem;
     margin-bottom: 3rem;
 }
 
@@ -15480,12 +15488,14 @@ div.single-product-rating .icon {
     margin-bottom: 1rem;
     position: relative;
     padding-bottom: 0.5rem;
+	width: max-content;
+	margin-inline: auto;
 }
 
 .footer-section h3::after {
     content: '';
     position: absolute;
-    left: 43%;
+    left: 0;
 	transform: translateX(-50%);
     bottom: 0;
     width: 40px;
@@ -15506,7 +15516,8 @@ div.single-product-rating .icon {
 
 .footer-section ul li {
     margin-bottom: 0.5rem;
-    font-size: 13px;
+    font-size: 1rem;
+	font-family: "Source Code Pro", Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     transition: transform 0.2s ease, color 0.2s ease;
 }
 
@@ -15630,4 +15641,45 @@ div.single-product-rating .icon {
 
 .footer-section .social-icons a[aria-label="YouTube"]:hover {
     color: #ff0000;
+}
+
+.social-icons {
+  padding: 1rem;
+  margin-inline: auto;
+  width: max-content;
+}
+
+.social-icons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1.25rem; 
+  flex-wrap: wrap;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #4ac4cf; 
+  border-radius: 9999px; 
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  background-color: #151515;
+}
+
+.social-icons a img {
+  width: 1rem; 
+  height: 1rem; 
+}
+
+.social-icons a:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
 }
