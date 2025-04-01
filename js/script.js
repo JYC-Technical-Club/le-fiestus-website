@@ -1863,7 +1863,7 @@
 					};
 		
 				if (livedemo) {
-					var d = new Date("2024-05-10");
+					var d = new Date("2025-04-25");
 					d.setHours(17); // Set hours to 17 (5 PM)
 					d.setMinutes(30); // Set minutes to 30
 					settings[$countDownItem.attr('data-type')] = d;
