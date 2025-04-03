@@ -15476,6 +15476,7 @@ div.single-product-rating .icon {
 }
 
 .footer-section {
+	text-align: left;
     flex: 1;
     min-width: 200px;
     animation: fadeInUp 0.5s ease forwards;
