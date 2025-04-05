@@ -10500,6 +10500,7 @@ a.link-social:hover::after {
 }
 
 .box-event-date-month {
+	color: #ff3700;
 	margin-top: 2px;
 	line-height: 1;
 	text-transform: uppercase;
