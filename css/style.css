@@ -1288,10 +1288,10 @@ html:not(.lt-ie10) .not-animated {
 	transform: translate3d(0, 0, 0);
 }
 
-html.mobile .ui-to-top,
+/* html.mobile .ui-to-top,
 html.tablet .ui-to-top {
 	display: none !important;
-}
+} */
 
 @media (min-width: 576px) {
 	.ui-to-top {

@@ -960,7 +960,7 @@
 		}
 
 		// UI To Top
-		if (isDesktop && !isNoviBuilder) {
+		if (!isNoviBuilder) {
 			$().UItoTop({
 				easingType: 'easeOutQuad',
 				containerClass: 'ui-to-top fa fa-angle-up'
