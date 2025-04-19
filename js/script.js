@@ -1995,4 +1995,12 @@
 		}
 
 	});
+	// MOST IMPORTANT FUNCTION
+	setTimeout(() => {
+		document.getElementById("ui-to-top").addEventListener("dblclick", (e) => {
+			e.preventDefault();
+		
+			window.open("https://www.youtube.com/watch?v=xvFZjo5PgG0", "__blank", "popup=true")
+		})
+	}, 100)
 }());
