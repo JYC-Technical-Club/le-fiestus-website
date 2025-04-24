@@ -55,7 +55,8 @@
           data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px"
           data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
           <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse">
-            <span></span></div>
+            <span></span>
+          </div>
           <div class="rd-navbar-main-outer">
             <div class="rd-navbar-main">
               <!--RD Navbar Panel-->
@@ -242,9 +243,18 @@
   </div> -->
       <!-- <div class="coming_soon"><h1>COMING SOON!</h1></div> -->
 
-        <!-- Main cards  -->
+      <!-- Main cards  -->
       <div class="container-card-section">
-        <div class="card__container">
+        <h1>1st Day 🎉</h1>
+        <div class="card__container first_day">
+
+        </div>
+        <h1>2nd Day 🔥</h1>
+        <div class="card__container second_day">
+
+        </div>
+        <h1>3rd Day 🎆</h1>
+        <div class="card__container third_day">
 
         </div>
       </div>
@@ -636,7 +646,6 @@
 
     <script>
       "use strict";
-      const cardContainer = document.querySelector(".card__container");
 
       const cardGenerator = (imageSrc, name, description, instagramLink) => `
       <article class="card__article">
@@ -654,41 +663,85 @@
       </article>
       `;
 
+      const firstDayContainer = document.querySelector(".card__container.first_day");
+      const secondDayContainer = document.querySelector(".card__container.second_day");
+      const thirdDayContainer = document.querySelector(".card__container.third_day");
+
+      const cardContainerArr = [firstDayContainer, secondDayContainer, thirdDayContainer]
+
       const cardsData = [
-        // {
-        //   imageSrc: "images/le fiestus/ablaze-band.jpg",
-        //   name: "Ablaze",
-        //   description: "Band",
-        //   instagramLink: "https://www.instagram.com/ablaze_the_band/"
-        // },
         {
           imageSrc: "images/le fiestus/tracer.jpg",
-          name: "Tracer",
+          name: "DJ Tracer",
           description: "DJ",
-          instagramLink: "https://www.instagram.com/tracermusicofficial/"
+          instagramLink: "https://www.instagram.com/tracermusicofficial/",
+          day: 1
         },
-        // {
-        //   imageSrc: "images/le fiestus/Danny.jpg",
-        //   name: "Danny",
-        //   description: "Singer",
-        //   instagramLink: "https://www.instagram.com/dannyonvox/"
-        // },
         {
           name: "Anshika Pandey",
           imageSrc: "images/le fiestus/Anshika.jpg",
-          description: "Singer", 
-          instagramLink: "https://www.instagram.com/anshikapandeyy/"
+          description: "Singer",
+          instagramLink: "https://www.instagram.com/anshikapandeyy/",
+          day: 1
+        },
+        {
+          imageSrc: "images/le fiestus/keshav-sadhna.jpg",
+          name: "Keshav Sadhna",
+          description: "Actor",
+          instagramLink: "https://www.instagram.com/keshavsadhna/",
+          day: 1
+        },
+        {
+          imageSrc: "images/le fiestus/ablaze-band.jpg",
+          name: "Ablaze",
+          description: "Band",
+          instagramLink: "https://www.instagram.com/ablaze_the_band/",
+          day: 2
+        },
+        {
+          imageSrc: "images/le fiestus/Danny.jpg",
+          name: "Danny",
+          description: "Singer",
+          instagramLink: "https://www.instagram.com/dannyonvox/",
+          day: 2
+        },
+        {
+          imageSrc: "images/le fiestus/dj-suitup.png",
+          name: "DJ SUITUP",
+          description: "DJ",
+          instagramLink: "https://www.instagram.com/djsuitup/",
+          day: 2
+        },
+        {
+          imageSrc: "images/le fiestus/young-and-broke.jpeg",
+          name: "YOUNG AND BROKE",
+          description: "DJ",
+          instagramLink: "https://www.instagram.com/youngandbrokemusic/",
+          day: 3
+        },
+        {
+          imageSrc: "images/le fiestus/nikhil-dsouza.jpg",
+          name: "Nikhil D'souza",
+          description: "Headliner Artist",
+          instagramLink: "https://www.instagram.com/nikhilmusic/",
+          day: 3
+        },
+        {
+          imageSrc: "images/le fiestus/appurv-gupta.JPG",
+          name: "Appurv Gupta",
+          description: "Standup Comedian",
+          instagramLink: "https://www.instagram.com/appurv20/",
+          day: 3
         }
       ]
 
-        cardsData.forEach((card) => {
-          cardContainer.insertAdjacentHTML("beforeend", cardGenerator(card.imageSrc, card.name, 
-            card.description, card.instagramLink
-          ));
-        })
+      cardsData.forEach((card) => {
+        cardContainerArr[card.day - 1].insertAdjacentHTML("beforeend", cardGenerator(card.imageSrc, card.name,
+              card.description, card.instagramLink
+            ));
+      })
 
-     
-    </script>
+
     </script>
 </body>
 
