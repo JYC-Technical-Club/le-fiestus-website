@@ -15273,35 +15273,6 @@ div.single-product-rating .icon {
 	animation: scroll-right 15s linear infinite;
   }
   
-  /* Fade-in effect on edges */
-  /* .logos:before,
-  .logos:after,
-  .logos-reverse:before,
-  .logos-reverse:after {
-	content: "";
-	position: absolute;
-	top: 0;
-	width: 150px;
-	height: 100%;
-	z-index: 2;
-	pointer-events: none;
-	background: linear-gradient(to right, white 0%, transparent 100%);
-  } 
-  
-   .logos:after {
-	right: 0;
-	background: linear-gradient(to left, white 0%, transparent 100%);
-  }
-  
-  .logos-reverse:before {
-	left: 0;
-	background: linear-gradient(to right, white 0%, transparent 100%);
-  }
-  
-  .logos-reverse:after {
-	right: 0;
-	background: linear-gradient(to left, white 0%, transparent 100%);
-  } */
   
   /* Animations */
   @keyframes scroll-left {
@@ -15315,7 +15286,7 @@ div.single-product-rating .icon {
   
   @keyframes scroll-right {
 	0% {
-	  transform: translateX(-50%);
+	  transform: translateX(-100%);
 	}
 	100% {
 	  transform: translateX(0);
@@ -15326,9 +15297,30 @@ div.single-product-rating .icon {
   @media screen and (max-width: 768px) {
 	.logos-track {
 	  animation-duration: 10s;
+	  animation: scroll-left-mobile 15s linear infinite;
+	}
+	.logos-reverse .logos-track.reverse {
+		animation: scroll-right-mobile 15s linear infinite;
+	  }
+  }
+  
+  @keyframes scroll-left-mobile {
+	0% {
+	  transform: translateX(0);
+	}
+	100% {
+	  transform: translateX(-225%);
 	}
   }
   
+  @keyframes scroll-right-mobile {
+	0% {
+	  transform: translateX(-150%);
+	}
+	100% {
+	  transform: translateX(0);
+	} 
+  }
   .partition {
 	height: 0.2px;
 	background-color: #2aadc5;
